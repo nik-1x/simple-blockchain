@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <form action="{{ url_for('index') }}" method="POST">
+
+      <div class="mb-3">
+        <label for="inpFrom" class="form-label">From</label>
+        <input type="text" class="form-control" id="inpFrom" name="inFrom">
+      </div>
+
+      <div class="mb-3">
+        <label for="inpTo" class="form-label">To</label>
+        <input type="text" class="form-control" id=inpTo" name="inTo">
+      </div>
+
+      <div class="mb-3">
+        <label for="inpAmount" class="form-label">Amount</label>
+        <input type="text" class="form-control" id="inpAmount" name="inAmount">
+      </div>
+
+      <button type="submit" class="btn btn-success">Approve</button>
+    </form>
+
+{% endblock %}
